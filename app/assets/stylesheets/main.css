@@ -185,12 +185,20 @@ body > section {
   padding-top: 2em;
 }
 
+.pad_top12 {
+  padding-top: 12em;
+}
+
 .text-justify {
   text-align: justify;
 }
 
 .col_white {
   color:#ffffff;
+}
+
+.col_4e {
+  color: #4e4e4e;
 }
 
 /*************************
@@ -620,7 +628,7 @@ input.search-form:hover {
   font-size: 48px;
   height: 110px;
   width: 110px;
-  margin: 3px;
+  margin: 5px;
   border-radius: 100%;
   line-height: 110px;
   text-align:center;
@@ -633,8 +641,6 @@ input.search-form:hover {
   -moz-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
-  float: left;
-  margin-right: 25px;
 }
 
 .feature-wrap i:hover {
