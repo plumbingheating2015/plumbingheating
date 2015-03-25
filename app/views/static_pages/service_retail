@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | Corlate</title>
+</head><!--/head-->
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+            <h2>RETAIL STORE PLUMBING</h2>
+            <h3>RESTAURANT & RETAIL STORE PLUMBING</h3>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                <div class="col-md-8 text-justify">
+                    <div class="blog-item">
+                        <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2014/02/Ratail-and-resturant-plumbing-service1.png"  alt="" />
+                <h3><b>Restaurant & Retail Store Plumbing: Protecting Your Business</b></h3>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">
+                
+                <p>Mr. Speedy handles retail businesses and restaurants. Retail store plumbing requires special treatment, specialized equipment and special attention, all of which we provide.</p>                                       
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-hand-o-right"></i> Minimize inconvenience to customers and staff and reduce business downtime, solving plumbing emergencies fast.</li>
+                    <li><i class="fa fa-hand-o-right"></i> Ongoing maintenance programs and solutions to keep water, grease and waste lines open and flowing normally.</li>
+                </ul>
+                <p>Our regular restaurant and retail store plumbing accounts include local businesses, many landmark restaurants, and several well-known national retail chains including <b>Ross Dress For Less, Conway Stores,  National Stores and Factory 2-U</b>. Make your restaurant or retail location the next to be protected by Mr. Speedy services.</p>
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <h3><b>The Services Your Retail Business Needs</b></h3>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">                                        
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-hand-o-right"></i> Experienced plumbing technicians with 30+ years of experience in plumbing and rooter services</li>
+                    <li><i class="fa fa-hand-o-right"></i> Excellent diagnostic equipment and tools</li>
+                    <li><i class="fa fa-hand-o-right"></i> No-obligation free onsite assessment</li>
+                    <li><i class="fa fa-hand-o-right"></i> Toilets: clogs, repairs, installations and maintenance</li>
+                    <li><i class="fa fa-hand-o-right"></i> Sewer line: clogs, cleaning, maintenance repair and replacement</li>
+                    <li><i class="fa fa-hand-o-right"></i> Sloan valves: rebuild, repair or replace</li>
+                    <li><i class="fa fa-hand-o-right"></i> <a href="#">Hydrojetting</a>: powerful water jets to decimate obstructions, clean drains, and prevent future clogs</li>
+                    <li><i class="fa fa-hand-o-right"></i> <a href="#">Water heaters</a>: installation, repairs and replacement (certified installers of leading brands)</li>
+                    <li><i class="fa fa-hand-o-right"></i> Sump pump: sales, installation and repair</li>
+                    <li><i class="fa fa-hand-o-right"></i> Leak detection: electronic detection equipment uncovers gas, water or sewage</li>
+                    <li><i class="fa fa-hand-o-right"></i> Grease trap: sales, installation and maintenance (repair & unclog)</li>
+                    <li><i class="fa fa-hand-o-right"></i> The right solution prevents future dilemmas</li>
+                    <li><i class="fa fa-hand-o-right"></i> State <a href="#">licensed plumbing contractor</a>, fully insured</li>
+                    <li><i class="fa fa-hand-o-right"></i> Honest, reliable professional services</li>
+                    <li><i class="fa fa-hand-o-right"></i> Regular maintenance programs available</li>
+                    <li><i class="fa fa-hand-o-right"></i> Proudly Serving metro Los Angeles, Orange County and the San Francisco Bay Area</li>
+                </ul>
+                <p><b>Our Published Press Release About Mr Speedy Community Effort: <a href="#">Mr. Speedy Plumbing Receives City of LA Appreciation Award for Donation to Saslow Dog Park</a></b></p>
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+                    <div class="widget search">
+                        <form role="form">
+                                <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
+                        </form>
+                    </div>
+                    
+                    <address>
+                        <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+                        <p>1537 Flint Street <br>
+                        Tumon, MP 96911</p>
+                        <p>Phone:670-898-2847 <br>
+                        Email Address:info@domain.com</p>
+                    </address>
+                    <div class="well">
+                    <form>
+                        <h4><b>SCHEDULE SERVICE</b></h4>
+                        <div class="form-group">
+                            <label for="inputName">Name *</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email *</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone">Phone *</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputZip">Zip Code *</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="Zip Code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDropdown">Type of Plumbing or Rooter Issue</label>
+                            <select class="form-control">
+                                <option>Residential</option>
+                                <option>Commercial</option>
+                                <option>Restaurant</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Please provide details about your plumbing issue</label>
+                            <textarea type="text" class="form-control" id="lastname" rows="8" 
+                                placeholder="Please provide details about your plumbing issue"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">Submit a picture if available</label>
+                            <input type="file" id="inputfile">
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    </div>
+                    
+                    
+                    <div class="widget blog_gallery">
+                        <h3>Our Gallery</h3>
+                        <ul class="sidebar-gallery">
+                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
+                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
+                        </ul>
+                    </div><!--/.blog_gallery-->
+                        
+                    
+                </aside>     
+
+            </div><!--/.row-->
+
+         </div><!--/.blog-->
+
+    </section><!--/#blog-->
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>
