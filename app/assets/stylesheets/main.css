@@ -2180,7 +2180,7 @@ ul.faq li > div h3 {
 .blog-item {
   border-radius: 0;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .blog .blog-item .img-blog {
