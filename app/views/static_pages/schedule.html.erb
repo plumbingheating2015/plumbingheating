@@ -17,76 +17,146 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-7">
-                    <h5><b>Full Plumbing and Rooting Services | Plumber right at your door In 60 Min</b></h5>
-                    <h5>Los Angeles, West Hollywood, Beverly Hills, Orange County, and <a href="#">Now San Francisco Bay</a></h5>
+                <div class="col-sm-7 text-justify">
+                  <div class="blog-item">
+                      <h4><b>Full Plumbing Services</b></h4>
+                    </div>
+                    <!-- <h5>Los Angeles, West Hollywood, Beverly Hills, Orange County, and <a href="#">Now San Francisco Bay</a></h5> -->
+                    <div class="blog-item">
+                    <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2015/01/Plumbing-Services-582x1091-300x56.png"  alt="" />
+                    </div>
+                    <div class="blog-item">
                     <h5><b>Get 10% additional discount when you schedule a service right now! Please mention Promo Code: MrSpeedyPlumbing</b></h5>
+                    </div>
+                    <div class="blog-item">
                     <h5><a href="#">Cancel or re-schedule your service.</a></h5>
-                </div>
-                <div class="col-sm-5 text-justify">
+                    </div>
+
+
                     <ul>
                         <li>Best local plumbers equiped with latest equipment and technology</li>
                         <li>Hydro-jet machines to remove the most stubborn sewer line obstructions;</li>
-                        <li>Electronic leak detection devices to locate the source of a concealed leak;</li>
+                        <!-- <li>Electronic leak detection devices to locate the source of a concealed leak;</li> -->
                         <li>Full drain cleaning and rooting services;</li>
                         <li>Installation or replacement of water heaters and garbage disposal units;</li>
                         <li>Kitchen, bath, shower and toilet;</li>
                         <li>Installation or replacement of pipes, faucets and fixtures;</li>
-                        <li><em>Trenchless technology</em> to replace underground pipes without the need for intrusive digging.</li>
+                        <!-- <li><em>Trenchless technology</em> to replace underground pipes without the need for intrusive digging.</li> -->
                     </ul>
-                </div>
-            </div>   
+                    <div class="text-center">
+                        <img class="img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2015/02/bulina10.png"  alt="" />
+                    </div>
 
-            <div class="row pad_top2">
-                <div class="col-sm-7">
-                    <h2>SCHEDULE SERVICE</h2>
-                    <form class="form-horizontal" role="form">
-                       <div class="form-group">
-                          <label for="firstname" class="col-sm-2 control-label">Name</label>
-                          <div class="col-sm-10">
-                             <input type="text" class="form-control" id="firstname" 
-                                placeholder="Enter Your Name">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label for="lastname" class="col-sm-2 control-label">Email</label>
-                          <div class="col-sm-10">
-                             <input type="email" class="form-control" id="lastname" 
-                                placeholder="Enter Your Email">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label for="lastname" class="col-sm-2 control-label">Phone</label>
-                          <div class="col-sm-10">
-                             <input type="text" class="form-control" id="lastname" 
-                                placeholder="Enter Your Phone No">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label for="lastname" class="col-sm-2 control-label">Zip code</label>
-                          <div class="col-sm-10">
-                             <input type="text" class="form-control" id="lastname" 
-                                placeholder="Enter The Zip Code">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label for="lastname" class="col-sm-2 control-label">Message</label>
-                          <div class="col-sm-10">
-                             <textarea type="text" class="form-control" id="lastname" 
-                                placeholder="Please provide details about your plumbing issue"></textarea>
-                          </div>
-                       </div>
-                       
-                       <div class="form-group">
-                          <div class="col-sm-offset-2 col-sm-10">
-                             <button type="submit" class="btn btn-default active">Send</button>
-                          </div>
-                       </div>
-                    </form>
-                </div>
-                <div class="col-sm-5 text-justify">
                     <p>Please fill out the form below in its entirety. The more details you give us, the more we will know about your plumbing issue. As soon as we receive your form, a customer service representative will call you to further discuss your problem, and we’ll arrange to send out a Mr. Speedy plumbing technician to take care of your request and resolve your issue so your home or business can back to normal as soon as possible.</p>
                     <p>Mr. Speedy Plumbing and Rooter Inc. is a licensed plumbing contractor providing the full range of professional plumbing services to residential and commercial customers throughout California. We have great plumbers, who do great work, and we charge very fair prices. Our plumbers have years of experience in the field, and we provide them with all the best tools and the latest equipment to handle any plumbing issue. Our service vans are loaded with replacement parts and fixtures, so there’s no waiting while your service technician goes out to get the part or fixture that you need.</p>
+                
+                
+                  </div>
+                
+            
+                <div class="col-sm-5 text-justify">
+   <!--  <div class="col-md-12 col-lg-12">
+
+      <%= form_for User.new, html: {multipart: :true } do |f| %>
+
+ <div class="form-group">   
+    <%= f.label :name %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", pattern: "[a-zA-Z. ]{1,50}",  placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :phone %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", pattern: "[0-9]{10}",  placeholder: 'Enter your mobile number', maxlength:"10", required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :postal %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the qualification', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :issue, "Upload Resume" %><br>
+    <%= f.file_field :issue, type:"file", tabindex: "5", class: "form-control",  placeholder: 'Upload a file'  %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit', tabindex: "6", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        
+    </div>
+
+     <div class="col-sm-12">                          
+
+                              <%= form_tag users_path,:multipart => true,  class: "form-horizontal" do  %>                              
+
+                              <div class="form-group">
+                                  <label class="control-label col-sm-3">Name</label>
+                                  <div class="col-sm-9">                                  
+                                      <%= text_field_tag "user[name]", nil, type:"text", tabindex: "1", class: "form-control",  placeholder: 'Name' %>
+                                  
+                                  </div>
+                              </div>                       
+
+
+                              <div class="form-group">
+                                  <label class="control-label col-sm-3">email</label>
+                                  <div class="col-sm-9">                                  
+                                      <%= text_field_tag "user[email]", nil, type:"text", tabindex: "3", class: "form-control",  placeholder: 'email' %>
+                                  </div>
+                              </div>
+                              
+                              <div class="col-xs-6 col-sm-4">
+                                        <%= submit_tag 'Submit', :class => 'btn btn-warning btn-block',tabindex: "8" %>
+                                    </div>
+                          
+                              <% end %>
+
+                                    
+                              </div> -->
+                  <div class="well">
+                    <form>
+                        <h4><b>SCHEDULE SERVICE</b></h4>
+                        <div class="form-group">
+                            <label for="inputName">Name *</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email *</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone">Phone *</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputZip">Zip Code *</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="Zip Code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDropdown">Type of Plumbing or Rooter Issue</label>
+                            <select class="form-control">
+                                <option>Residential</option>
+                                <option>Commercial</option>
+                                <option>Restaurant</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Please provide details about your plumbing issue</label>
+                            <textarea type="text" class="form-control" id="lastname" rows="8" 
+                                placeholder="Please provide details about your plumbing issue"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputfile">Submit a picture if available</label>
+                            <input type="file" id="inputfile">
+                        </div>
+                        
+                        
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    </div>
+
+                    
                 </div>
             </div>
 

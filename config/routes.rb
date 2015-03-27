@@ -1,5 +1,7 @@
 Plumbingheating::Application.routes.draw do
 
+  resources :users 
+
   root 'static_pages#index'
 
   #get "static_pages/index"
@@ -12,6 +14,7 @@ Plumbingheating::Application.routes.draw do
   match '/', to: 'static_pages#index', via: 'get'
   match '/services', to: 'static_pages#services', via: 'get'
   match '/schedule', to: 'static_pages#schedule', via: 'get'
+  match '/schedule', to: 'static_pages#schedule', via: 'post'
   match '/specials', to: 'static_pages#specials', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/blog', to: 'static_pages#blog', via: 'get'
