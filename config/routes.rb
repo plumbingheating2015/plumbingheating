@@ -20,12 +20,15 @@ Plumbingheating::Application.routes.draw do
   match '/blog', to: 'static_pages#blog', via: 'get'
   match '/help', to: 'static_pages#help', via: 'get'
   match '/residential-plumbing', to: 'static_pages#service_residential', via: 'get'
-  match '/commercial-plumbing', to: 'static_pages#service_commercial', via: 'get'
-  match '/retail-plumbing/', to: 'static_pages#service_retail', via: 'get'
+  #match '/commercial-plumbing', to: 'static_pages#service_commercial', via: 'get'
+  #match '/retail-plumbing/', to: 'static_pages#service_retail', via: 'get'
   match '/water-heater-installation', to: 'static_pages#service_waterheater', via: 'get'
   match '/hydro-jetting', to: 'static_pages#service_hydrojetting', via: 'get'
   match '/plumbing-repair', to: 'static_pages#service_plumbingrepairs', via: 'get'
   match '/garbage-disposal', to: 'static_pages#service_garbagedisposal', via: 'get'
+  match '/about', to: 'static_pages#about', via: 'get'
+
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.

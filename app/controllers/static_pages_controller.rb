@@ -1,8 +1,5 @@
 class StaticPagesController < ApplicationController
   
-
-  
-
   def index
   end
 
@@ -43,6 +40,9 @@ class StaticPagesController < ApplicationController
   end
 
   def service_garbagedisposal    
+  end
+
+  def about    
   end
 
  

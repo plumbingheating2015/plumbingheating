@@ -205,9 +205,21 @@ body > section {
   color: #4e4e4e;
 }
 
+.font_16 {
+  font-size: 16px;
+}
+
 /*************************
 *******Header******
 **************************/
+
+#top_header a {
+  color: #ffffff;
+}
+
+#top_header a:hover, a:focus {
+  color: #E6E6E6;
+}
 
 #header .search{
   display: inline-block;
@@ -234,7 +246,7 @@ body > section {
 
 .mid-bar {
   padding: 10px 0;
-  background: #ccc;
+  background: #ffffff;
   border-bottom: 1px solid #222;
   line-height: 28px;
 }
@@ -417,12 +429,14 @@ input.search-form:hover {
   float: left;
   padding: 1%;
   letter-spacing: 0px;
+  color: #151515;
 }
 
 .tag_line {
   float: left;
   padding: 2%;
   letter-spacing: 0px;
+  color: #151515;
 }
 
 #home_bg {
@@ -1964,20 +1978,20 @@ ul.social_icons li  a i{
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0;
+  padding: 20px 0;
 }
 
 .gmap-area .gmap iframe {
-  border-radius: 50%;
-  height: 280px;
-  width: 300px;
+  border-radius: 1%;
+  height: 300px;
+  width: 100%;
 }
 
 .gmap{
     border: 10px solid #f6f5f0;
-    border-radius: 50%;
+    border-radius: 1%;
     height: 300px;
-    width: 300px;
+    width: 100%;
     box-shadow: 0px 0px 3px 3px #e7e4dc;
     overflow: hidden;
     position: relative;
