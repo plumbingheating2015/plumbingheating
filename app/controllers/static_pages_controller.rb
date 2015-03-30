@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def schedule
+    @user = User.new
   end
 
   def specials

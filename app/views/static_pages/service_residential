@@ -93,7 +93,7 @@
 
                                     <div class="media-body"> 
                                     <h5><b>Using The Latest Technology To Resolve Any Plumbing Issue:</b></h5>
-                <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2015/01/Plumbing-Services-582x1091.png"  alt="" />                                                           
+               <!--  <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2015/01/Plumbing-Services-582x1091.png"  alt="" /> -->                                                           
                 <ul class="list-unstyled">
                     <li><i class="fa fa-hand-o-right"></i> <b>Video Cameras</b>: The newest video systems to camera the line;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Hydrojet Machines</b>: Remove stubborn sewer-line obstructions caused by debris/sludge/tree roots;</li>
@@ -118,10 +118,10 @@
                 <aside class="col-md-4">
                     <address>
                         <h5><b>CALGARY SERVICE PLUMBER</b></h5>
-                        <p>1537 Flint Street <br>
-                        Tumon, MP 96911</p>
-                        <p>Phone:670-898-2847 <br>
-                        Email Address:info@domain.com</p>
+                        <p>2036 35 St SW <br>
+                        T2B0W9 Calgary, Alberta</p>
+                        <p>Phone: +1 403-475-5552 <br>
+                        Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
                     </address>
                     <div class="well">
                     <form>
@@ -169,8 +169,8 @@
                     <div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
                         <ul class="sidebar-gallery">
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
+                            <li><img src="/assets/gallery/gal-bathroom-lav.jpg" alt="" /></a></li>
+                            <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" alt="" /></a></li>
                             <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
                             <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
                             <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
