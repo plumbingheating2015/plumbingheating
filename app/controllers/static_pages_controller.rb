@@ -22,7 +22,8 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def service_residential    
+  def service_residential
+    @user = User.new    
   end
 
   def service_commercial    
@@ -31,16 +32,20 @@ class StaticPagesController < ApplicationController
   def service_retail    
   end
 
-  def service_waterheater    
+  def service_waterheater
+    @user = User.new    
   end
 
-  def service_hydrojetting    
+  def service_hydrojetting
+     @user = User.new    
   end
 
-  def service_plumbingrepairs    
+  def service_plumbingrepairs
+     @user = User.new    
   end
 
-  def service_garbagedisposal    
+  def service_garbagedisposal
+     @user = User.new    
   end
 
   def about    

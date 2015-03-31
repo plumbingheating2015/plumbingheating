@@ -75,7 +75,7 @@
                                         <div class="row">
                                             <div class="col-sm-8">
                                         <h5><b>We Provide Free Garbage Disposal Maintenance Tips</b></h5>
-                                        <p>With each garbage disposal installation from Mr. Speedy Plumbing, we always provide you with useful <b>free maintenance tips</b>.</p>
+                                        <p>With each garbage disposal installation from CSP Plumbing, we always provide you with useful <b>free maintenance tips</b>.</p>
                                         <p>Our knowledgeable plumbing technicians are ready to provide you with free maintenance <a href="#">tips</a> to help you keep your garbage disposal unit and your drains clear and flowing smoothly all year round. Our plumbers will be happy to show you how to flush your drains regularly with appropriate chemical solutions to prevent blockages.</p>
                                         <p>A functioning garbage disposal unit is a necessary part of the modern kitchen. A well-installed and regularly-maintained garbage disposal effectively and easily removes food products and waste from your kitchen sinks and drains.</p>
                                             </div>
@@ -124,78 +124,58 @@
                         <p>Phone: +1 403-475-5552 <br>
                         Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
                     </address>
-                    <div class="well">
-                    <form>
-                        <h4><b>SCHEDULE SERVICE</b></h4>
-                        <div class="form-group">
-                            <label for="inputName">Name *</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail">Email *</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPhone">Phone *</label>
-                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputZip">Zip Code *</label>
-                            <input type="text" class="form-control" id="inputZip" placeholder="Zip Code" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputDropdown">Type of Plumbing or Rooter Issue</label>
-                            <select class="form-control">
-                                <option>Residential</option>
-                                <option>Commercial</option>
-                                <option>Restaurant</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputMessage">Please provide details about your plumbing issue</label>
-                            <textarea type="text" class="form-control" id="lastname" rows="8" 
-                                placeholder="Please provide details about your plumbing issue"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputfile">Submit a picture if available</label>
-                            <input type="file" id="inputfile">
-                        </div>
-                        
-                        
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                    </div>
+        <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
 
 
                     <div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
-                        <ul class="sidebar-gallery">
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                        </ul>
-                    </div><!--/.blog_gallery-->                        
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div>                        
                     
                 </aside>     
 

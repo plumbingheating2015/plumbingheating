@@ -26,12 +26,12 @@
                                 <div class="col-xs-12 col-sm-12 blog-content">
                                     <div class="media-body">
                 
-                <p>Mr. Speedy handles retail businesses and restaurants. Retail store plumbing requires special treatment, specialized equipment and special attention, all of which we provide.</p>                                       
+                <p>CSP plumber handles retail businesses and restaurants. Retail store plumbing requires special treatment, specialized equipment and special attention, all of which we provide.</p>                                       
                 <ul class="list-unstyled">
                     <li><i class="fa fa-hand-o-right"></i> Minimize inconvenience to customers and staff and reduce business downtime, solving plumbing emergencies fast.</li>
                     <li><i class="fa fa-hand-o-right"></i> Ongoing maintenance programs and solutions to keep water, grease and waste lines open and flowing normally.</li>
                 </ul>
-                <p>Our regular restaurant and retail store plumbing accounts include local businesses, many landmark restaurants, and several well-known national retail chains including <b>Ross Dress For Less, Conway Stores,  National Stores and Factory 2-U</b>. Make your restaurant or retail location the next to be protected by Mr. Speedy services.</p>
+                <p>Our regular restaurant and retail store plumbing accounts include local businesses, many landmark restaurants, and several well-known national retail chains including <b>Ross Dress For Less, Conway Stores, National Stores and Factory 2-U</b>. Make your restaurant or retail location the next to be protected by CSP services.</p>
                                     </div> 
                                 </div>
                             </div>
@@ -51,16 +51,15 @@
                     <li><i class="fa fa-hand-o-right"></i> Sloan valves: rebuild, repair or replace</li>
                     <li><i class="fa fa-hand-o-right"></i> <a href="#">Hydrojetting</a>: powerful water jets to decimate obstructions, clean drains, and prevent future clogs</li>
                     <li><i class="fa fa-hand-o-right"></i> <a href="#">Water heaters</a>: installation, repairs and replacement (certified installers of leading brands)</li>
-                    <li><i class="fa fa-hand-o-right"></i> Sump pump: sales, installation and repair</li>
-                    <li><i class="fa fa-hand-o-right"></i> Leak detection: electronic detection equipment uncovers gas, water or sewage</li>
+                    <li><i class="fa fa-hand-o-right"></i> Sump pump: sales, installation and repair</li>                    
                     <li><i class="fa fa-hand-o-right"></i> Grease trap: sales, installation and maintenance (repair & unclog)</li>
                     <li><i class="fa fa-hand-o-right"></i> The right solution prevents future dilemmas</li>
                     <li><i class="fa fa-hand-o-right"></i> State <a href="#">licensed plumbing contractor</a>, fully insured</li>
                     <li><i class="fa fa-hand-o-right"></i> Honest, reliable professional services</li>
                     <li><i class="fa fa-hand-o-right"></i> Regular maintenance programs available</li>
-                    <li><i class="fa fa-hand-o-right"></i> Proudly Serving metro Los Angeles, Orange County and the San Francisco Bay Area</li>
+                    <li><i class="fa fa-hand-o-right"></i> Proudly Serving Calgary, Airdrie, Chestermere or Okotoks Area</li>
                 </ul>
-                <p><b>Our Published Press Release About Mr Speedy Community Effort: <a href="#">Mr. Speedy Plumbing Receives City of LA Appreciation Award for Donation to Saslow Dog Park</a></b></p>
+                <p><b>Our Published Press Release About CSP Community Effort: <a href="#">CSP Plumbing Receives City of Calgary Appreciation Award for Donation to Saslow Dog Park</a></b></p>
                                     </div> 
                                 </div>
                             </div>
@@ -128,12 +127,15 @@
                     
                     <div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
-                        <ul class="sidebar-gallery">
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                        </ul>
-                    </div><!--/.blog_gallery-->
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div>
                         
                     
                 </aside>     

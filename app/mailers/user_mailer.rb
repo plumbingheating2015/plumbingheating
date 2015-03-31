@@ -1,16 +1,16 @@
 class UserMailer < ActionMailer::Base
 
-  default from: "priyanko.dey33@gmail.com"
+  default from: "info@calgaryserviceplumbers.com"
 
   def welcome_email(user)
     @user = user
     #attachments["garb.jpg"] = File.read("#{Rails.root}/public/assets/garb.jpg")
-    mail(to: @user.email, subject: 'Welcome to My Awesome Site')
+    mail(to: @user.email, subject: 'Welcome to Calgary Service Plumbers')
   end
 
    def query_mail(user)
   	@user=user
-    mail(:to => "priyankodey87@gmail.com", :subject => "getting quote")
+    mail(:to => "info@calgaryserviceplumbers.com", :subject => "Getting Quote")
    end
 
 end

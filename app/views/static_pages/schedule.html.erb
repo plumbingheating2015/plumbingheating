@@ -17,11 +17,11 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-7 text-justify">
+                <div class="col-sm-8 text-justify">
                   <div class="blog-item">
                       <h4><b>Full Plumbing Services</b></h4>
                     </div>
-                    <!-- <h5>Los Angeles, West Hollywood, Beverly Hills, Orange County, and <a href="#">Now San Francisco Bay</a></h5> -->
+                    
                     <div class="blog-item">                                               
                         <ul class="sidebar-gallery">
                           <li><img class="img-responsive img-blog" src="/assets/service/home-plumbing.gif"  alt="" /></li>
@@ -29,7 +29,7 @@
                         </ul>                      
                   </div>
                     <div class="blog-item">
-                    <h5><b>Get 10% additional discount when you schedule a service right now! Please mention Promo Code: MrSpeedyPlumbing</b></h5>
+                    <h5><b>Get 10% additional discount when you schedule a service right now! Please mention Promo Code: CSP</b></h5>
                     </div>
                     <div class="blog-item">
                     <h5><a href="#">Cancel or re-schedule your service.</a></h5>
@@ -39,26 +39,24 @@
                     <ul>
                         <li>Best local plumbers equiped with latest equipment and technology</li>
                         <li>Hydro-jet machines to remove the most stubborn sewer line obstructions;</li>
-                        <!-- <li>Electronic leak detection devices to locate the source of a concealed leak;</li> -->
                         <li>Full drain cleaning and rooting services;</li>
                         <li>Installation or replacement of water heaters and garbage disposal units;</li>
                         <li>Kitchen, bath, shower and toilet;</li>
                         <li>Installation or replacement of pipes, faucets and fixtures;</li>
-                        <!-- <li><em>Trenchless technology</em> to replace underground pipes without the need for intrusive digging.</li> -->
                     </ul>
                     <div class="text-center">
                         <img class="img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2015/02/bulina10.png"  alt="" />
                     </div>
 
-                    <p>Please fill out the form below in its entirety. The more details you give us, the more we will know about your plumbing issue. As soon as we receive your form, a customer service representative will call you to further discuss your problem, and we’ll arrange to send out a Mr. Speedy plumbing technician to take care of your request and resolve your issue so your home or business can back to normal as soon as possible.</p>
-                    <p>Mr. Speedy Plumbing and Rooter Inc. is a licensed plumbing contractor providing the full range of professional plumbing services to residential and commercial customers throughout California. We have great plumbers, who do great work, and we charge very fair prices. Our plumbers have years of experience in the field, and we provide them with all the best tools and the latest equipment to handle any plumbing issue. Our service vans are loaded with replacement parts and fixtures, so there’s no waiting while your service technician goes out to get the part or fixture that you need.</p>
+                    <p>Please fill out the form below in its entirety. The more details you give us, the more we will know about your plumbing issue. As soon as we receive your form, a customer service representative will call you to further discuss your problem, and we’ll arrange to send out a CSP technician to take care of your request and resolve your issue so your home or business can back to normal as soon as possible.</p>
+                    <p>CSP Plumbing and Rooter Inc. is a licensed plumbing contractor providing the full range of professional plumbing services to residential customers throughout California. We have great plumbers, who do great work, and we charge very fair prices. Our plumbers have years of experience in the field, and we provide them with all the best tools and the latest equipment to handle any plumbing issue. Our service vans are loaded with replacement parts and fixtures, so there’s no waiting while your service technician goes out to get the part or fixture that you need.</p>
                 
                 
                   </div>
                 
             
-                <div class="col-sm-5 text-justify">
-     <div class="col-sm-12">
+                <div class="col-sm-4 text-justify">
+
       <address>
           <h5><b>CALGARY SERVICE PLUMBER</b></h5>
           <p>2036 35 St SW <br>
@@ -71,7 +69,7 @@
 <h4><b>SCHEDULE SERVICE</b></h4>
  <div class="form-group">   
     <%= f.label :'name *' %><br>
-    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", pattern: "[a-zA-Z. ]{1,50}",  placeholder: 'Enter your name',  required: true  %>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
   </div>
   <div class="form-group">
     <%= f.label :'email *' %><br>
@@ -79,31 +77,33 @@
   </div>
   <div class="form-group">
     <%= f.label :'phone *' %><br>
-    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", pattern: "[0-9]{10}",  placeholder: 'Enter your mobile number', maxlength:"10", required: true  %>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
   </div>
   <div class="form-group">
     <%= f.label :'postal *' %><br>
-    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the qualification', required: true  %>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
   </div>
   <div class="form-group">                
       <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
-      <%= f.select :issue, [['Residential'], ['Commercial'], ['Restaurant']], {}, tabindex: "4", class: "form-control" %>
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.label :'Please provide details about your plumbing issue' %><br>
-    <%= f.text_area :message, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the qualification', rows: "8", required: true  %>
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
   </div>
-  <div class="form-group">
-    <%= f.label :'Submit a picture if available' %><br>
-    <%= f.file_field :issue, type:"file", tabindex: "5", class: "form-control",  placeholder: 'Upload a file'  %>
-  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
 
   <div class="actions">
-    <%= f.submit 'Send', tabindex: "6", :class => 'btn btn-primary btn-block' %>
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
   </div>
 <% end %>
         </div>
-    </div>
+    
 
     <!--  <div class="col-sm-12">                          
 
@@ -207,7 +207,7 @@
                         
                         <div class="media-body">
                             <h3 class="media-heading">LINDA G. T, BEVERLY HILLS , CA</h3>
-                            <p>I have never called Speedy before, but i’m really glad that I did. I think the technician was very knowledgeable, and knew exactly what wa...</p>
+                            <p>I have never called CSP before, but i’m really glad that I did. I think the technician was very knowledgeable, and knew exactly what wa...</p>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                         
                         <div class="media-body">
                             <h3 class="media-heading">BONNIE D.M., 12/27/2013</h3>
-                            <p>Phenomenal Service! I was very impressed with the plumbers at Mr. Speedy Plumbing they were on time and courteous over the phone. They had gre...</p>
+                            <p>Phenomenal Service! I was very impressed with the plumbers at CSP, they were on time and courteous over the phone. They had gre...</p>
                         </div>
                     </div>
                 </div>  

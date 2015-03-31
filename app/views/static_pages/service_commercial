@@ -26,7 +26,7 @@
                                 <div class="col-xs-12 col-sm-12 blog-content">
                                     <div class="media-body"> 
                     <p>Plumbing in commercial office buildings and industrial facilities requires a high level of expertise and the use of high-grade, industrial-strength equipment.</p>
-                    <p>Mr. Speedy’s commercial plumbing team has many years of professional experience. We have the very latest equipment, technology and tools. We know how to handle any plumbing issue that can develop in large commercial buildings or industrial facilities.</p>
+                    <p>CSP’s commercial plumbing team has many years of professional experience. We have the very latest equipment, technology and tools. We know how to handle any plumbing issue that can develop in large commercial buildings or industrial facilities.</p>
                     <h5><b>We specialize in commercial service and repair. Our commercial/industrial plumbing services include the following:</b></h5>                                                                                                                  
                 <ul class="list-unstyled">
                     <li><i class="fa fa-hand-o-right"></i> <b><a href="#">Hydro Jetting</a></b> :  Remove debris/sludge/tree roots from lines, drains and grease traps;</li>
@@ -37,8 +37,7 @@
                     <li><i class="fa fa-hand-o-right"></i> <b>Sump Pumps</b>: Sales, repair & installation;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Toilets</b>: Sales, Repair & Installation;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Sloan Valves</b>: Rebuild or replace;</li>
-                    <li><i class="fa fa-hand-o-right"></i> <b><a href="#">Garbage Disposals</a></b>: Sales, Installation and Repair;</li>                    
-                    <li><i class="fa fa-hand-o-right"></i> <b>Leak Detection</b>: Electronic detection devices to locate concealed water or gas leaks;</li>
+                    <li><i class="fa fa-hand-o-right"></i> <b><a href="#">Garbage Disposals</a></b>: Sales, Installation and Repair;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Backflow Testing</b>: Stay compliant – prevent sewage water from backing up into the drinking water;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Tenant Improvement</b>: New bathrooms, kitchens, water heaters, water closets;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Building Repiping</b>: Repipe one unit, a single floor, or an entire building;</li>
@@ -53,10 +52,10 @@
 
 
                         <div id="contact-page clearfix">
-                                <p><b>We Respect Your Business.</b><br> Business owners, property managers, and facilities maintenance executives know that Mr Speedy’s plumbing technicians are experts in commercial plumbing. We have the latest technology and equipment to deal with any plumbing issue. Our well-trained commercial plumbing team has years of experience: they love their work and they know exactly what they are doing.</p>
+                                <p><b>We Respect Your Business.</b><br> Business owners, property managers, and facilities maintenance executives know that CSP technicians are experts in commercial plumbing. We have the latest technology and equipment to deal with any plumbing issue. Our well-trained commercial plumbing team has years of experience: they love their work and they know exactly what they are doing.</p>
                         </div>
                         <div id="contact-page clearfix">
-                                <p><b>Time Is Money.</b><br> A plumbing problem at a business location must be resolved as soon as possible. Downtime costs your business money and causes inconvenience your customers and your employees. Call Mr Speedy: we can dispatch a commercial plumbing expert to you in a heartbeat and deal with the problem quickly and efficiently. And always at a competitive price.</p>
+                                <p><b>Time Is Money.</b><br> A plumbing problem at a business location must be resolved as soon as possible. Downtime costs your business money and causes inconvenience your customers and your employees. Call CSP: We can dispatch a commercial plumbing expert to you in a heartbeat and deal with the problem quickly and efficiently. And always at a competitive price.</p>
                         </div>
                 </div><!--/.col-md-8-->
 
@@ -118,15 +117,15 @@
                     
                     <div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
-                        <ul class="sidebar-gallery">
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                        </ul>
-                    </div><!--/.blog_gallery-->
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div>
                         
                     
                 </aside>     

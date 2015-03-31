@@ -181,6 +181,10 @@ body > section {
 *******General******
 **************************/
 
+.pad_top1 {
+  padding-top: 1em;
+}
+
 .pad_top2 {
   padding-top: 2em;
 }

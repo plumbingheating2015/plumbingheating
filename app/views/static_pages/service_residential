@@ -23,7 +23,7 @@
                         <h3><b>Home Plumbing Repairs and Installations</b></h3>
                         <p>Voted Best Residential and home plumbing service provider in Calgary</p>
                         <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2014/02/mr-speedy-plumbing-los-angeles-google-reviews1.png"  alt="" />
-                        <img class="img-responsive img-blog" src="http://mrspeedyplumbing.com/wp-content/uploads/2014/02/Residential-Plumbing-Services1.png"  alt="" />
+                        
                             <div class="row"> 
                                 <div class="col-xs-12 col-sm-12 blog-content">
                                     <div class="media-body">                                        
@@ -33,7 +33,6 @@
                     <li><i class="fa fa-hand-o-right"></i> No Hidden Fees!</li>
                     <li><i class="fa fa-hand-o-right"></i> Experienced plumbers are in your area right now</li>
                     <li><i class="fa fa-hand-o-right"></i> Professional drain cleaning: <a href="#"> Hydro Jet Cleaning</a></li>
-                    <li><i class="fa fa-hand-o-right"></i> Electronic Leak Detection</li>
                 </ul>
                                     </div> 
                                 </div>
@@ -73,7 +72,7 @@
                     <li><i class="fa fa-hand-o-right"></i> <b><a href="#">Garbage Disposals</a></b>: Installation, repair, remove obstructions, cleaning and maintenance;</li>
                     <li><i class="fa fa-hand-o-right"></i> Sewers: Cleaning, Maintenance and Sewer Repair;</li>
                     <!-- <li><i class="fa fa-hand-o-right"></i> Maintenance of drains and pipes: Prevention is better than cure. We show you how to clean your drains and keep them clean and clear all year round;</li> -->
-                    <li><i class="fa fa-hand-o-right"></i> Gas Lines: Inspection, leak detection, repair;</li>
+                    <li><i class="fa fa-hand-o-right"></i> Gas Lines: Inspection, repair;</li>
                     <li><i class="fa fa-hand-o-right"></i> Waterlines: leaky, deteriorating or burst pipes.</li>
                     <li><i class="fa fa-hand-o-right"></i> Pipes: Install, repair or replace. Plastic, copper or iron pipes; Shower stoppages and valves:</li>
                         <ul>
@@ -98,8 +97,7 @@
                     <li><i class="fa fa-hand-o-right"></i> <b>Video Cameras</b>: The newest video systems to camera the line;</li>
                     <li><i class="fa fa-hand-o-right"></i> <b>Hydrojet Machines</b>: Remove stubborn sewer-line obstructions caused by debris/sludge/tree roots;</li>
                     <!-- <li><i class="fa fa-hand-o-right"></i> <b>PermaLiner Trenchless Technology</b>: Reline or replace underground pipes without excessive disruptive digging;</li> -->
-                    <li><i class="fa fa-hand-o-right"></i> <b>Inspection/Testing</b>: Inspection and leak detection – for gas, water, sewer;</li>
-                    <!-- <li><i class="fa fa-hand-o-right"></i> <b>Electronic Leak Detection</b>: The latest devices to pinpoint the source of a hidden leak – whether it is underground, behind a wall, or beneath a concrete slab;</li> -->
+                    <li><i class="fa fa-hand-o-right"></i> <b>Inspection/Testing</b>: Inspection – for gas, water, sewer;</li>                    
                     <li><i class="fa fa-hand-o-right"></i> <b>Emergency Plumbing</b>: GPS-equipped vans and wireless dispatching – our service technicians can be at your doorstep in a heartbeat to resolve any emergency home plumbing issue.</li>
                         
                 </ul>
@@ -124,77 +122,57 @@
                         Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
                     </address>
                     <div class="well">
-                    <form>
-                        <h4><b>SCHEDULE SERVICE</b></h4>
-                        <div class="form-group">
-                            <label for="inputName">Name *</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail">Email *</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPhone">Phone *</label>
-                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputZip">Zip Code *</label>
-                            <input type="text" class="form-control" id="inputZip" placeholder="Zip Code" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputDropdown">Type of Plumbing or Rooter Issue</label>
-                            <select class="form-control">
-                                <option>Residential</option>
-                                <option>Commercial</option>
-                                <option>Restaurant</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputMessage">Please provide details about your plumbing issue</label>
-                            <textarea type="text" class="form-control" id="lastname" rows="8" 
-                                placeholder="Please provide details about your plumbing issue"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputfile">Submit a picture if available</label>
-                            <input type="file" id="inputfile">
-                        </div>
-                        
-                        
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                    </div>
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
                     
                     
                     <div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
-                        <ul class="sidebar-gallery">
-                            <li><img src="/assets/gallery/gal-bathroom-lav.jpg" alt="" /></a></li>
-                            <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery5.png" alt="" /></a></li>
-                            <li><a href="#"><img src="/assets/blog/gallery6.png" alt="" /></a></li>
-                        </ul>
-                    </div><!--/.blog_gallery-->
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <!-- <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li> -->
+    </ul>
+                    </div>
                         
                     
                 </aside>     
