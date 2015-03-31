@@ -14,6 +14,7 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+     @user = User.new
   end
 
   def blog

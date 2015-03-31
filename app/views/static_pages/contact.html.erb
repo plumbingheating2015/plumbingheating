@@ -40,51 +40,72 @@
                 </div>
             </div>
         </div>
-    </section>  <!--/gmap_area -->
+    </section> 
 
-    <section id="contact-page">
+    <section>
         <div class="container">
-            <div class="center">        
-                <h2>Drop Your Message</h2>
-            </div> 
-            <div class="row contact-wrap"> 
-                <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <div class="form-group">
-                            <label>Name *</label>
-                            <input type="text" name="name" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" name="email" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Company Name</label>
-                            <input type="text" class="form-control">
-                        </div>                        
+        <div class="blog">
+            <div class="row">
+                <div class="col-sm-6 text-justify">
+                   
+                       <!--  <h6>Installation and Repair, All Major Brands on Sale, Calgary, CA</h6> -->
+                    <div class="blog-item">
+                <h3><b>Communication is our Lifeline</b></h3>                             
+                                <div class="blog-content">
+                                    <div class="media-body">
+                <p>We are pioneers in intra-company communications. Your time is valuable: we know you don’t want to spend your day waiting for the plumber to show up.
+                </p> 
+                <p>With that in mind, Mr Speedy designed and developed its own <u>field-service management</u> software, giving us instant two-way communication with our plumbing technicians at any time, making us one of the most service-accessible and efficient plumbing companies you’ll ever call.</p>
+                                    </div> 
+                                </div>
+
+                        <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>                            
+                       </div>
+                            
                     </div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label>Subject *</label>
-                            <input type="text" name="subject" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Message *</label>
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
-                        </div>                        
-                        <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
-                        </div>
-                    </div>
-                </form> 
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#contact-page-->
+
+                </div><!--/.col-md-8-->
+
+                <aside class="col-sm-6">
+                    
+        <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>LET’S CONNECT WITH US</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+ 
+  <div class="form-group">
+    <%= f.label :'Message *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "3", class: "form-control",  placeholder: 'Write your message', rows: "4", required: true  %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "4", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                        
+                    
+                </aside>     
+
+            </div>
+
+         </div>
+     </div>
+    </section>
 
 
     <script src="/assets/jquery.js"></script>
