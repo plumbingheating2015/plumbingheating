@@ -49,7 +49,8 @@ class StaticPagesController < ApplicationController
      @user = User.new    
   end
 
-  def about    
+  def about
+    @user = User.new
   end
 
  
