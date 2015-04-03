@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 group :development do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3', '1.3.10'
 end
 
 gem 'sass-rails', '~> 4.0.0'
