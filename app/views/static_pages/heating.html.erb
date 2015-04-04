@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Schedule | Corlate</title>
+</head>
+<body>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="center">
+               <h2>HEATING</h2>
+               <h3>PRIORITY HEATING SYSTEM REPAIR IN CALGARY</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 text-justify">
+                    <div class="blog-item">
+                      <P>Heating system not working properly? You need Priority Plumbing’s prompt and professional service to get your home warm again. Don’t take any risks during the colder months. Our heating repair services are backed by state-of-the-art equipment and highly trained, courteous technicians.</P>
+                      
+                    </div>
+                    
+                    <div class="blog-item">
+                    <h4><b>Heating System Repair Services for Calgary Homeowners</b></h4>
+                        <div class="col-sm-7 text-justify">
+                          <p>We provide the following heating system repair services:</p>
+                          <ul>
+                              <li>Boiler repairs</li>
+                              <li>Leaking parts, pipes, and radiators</li>
+                              <li>Radiator repairs</li>
+                              <li>Circulating pumps</li>
+                              <li>Leaks in valves and pipes</li>
+                              <li>Automatic feed valves</li>
+                              <li>Cushion and expansion tanks</li>
+                              <li>Back flow preventers</li>
+                              <li>All hot water heating repairs</li>
+                          </ul>
+                          <h5><b>Give us a call today at 416-855-3729 to schedule your heating service appointment!</b></h5>
+                        </div>
+                        <div class="col-sm-5 text-justify">                                           
+                          <img class="img-responsive img-blog" src="http://priorityplumbing.ca/ppcore/wp-content/uploads/2013/11/heating-repair.jpg"  alt="" />
+                        </div>                                                
+                    </div>
+
+                    <div class="blog-item">
+                    <h4><b>In addition, no matter what the job is, you can always count on:</b></h4>
+                        <div class="col-sm-12 text-justify">
+                            <ul>
+                                <li>Same Day Service.</li>
+                                <li>Professional Technicians.</li>
+                                <li>Convenient Appointment Times.</li>
+                                <li>A Lifetime Warranty On All Installations.</li>
+                                <li>Guaranteed upfront pricing.</li>
+                                <li>Uniformed, courteous and very talented technicians.</li>
+                                <li>We clean the work area as clean or cleaner than we found it.</li>
+                                <li>A large inventory of parts so most jobs can be completed in a single visit.</li>
+                                <li>100% guaranteed satisfaction with our work.</li>
+                            </ul>
+                            <h5><b>Give us a call today at 416-855-3729 to schedule your heating service appointment!</b></h5>
+                        </div>
+                    </div>
+                
+                  </div>
+                
+            
+                <div class="col-sm-4 text-justify">
+
+      <address>
+          <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+          <p>2036 35 St SW <br>
+          T2B0W9 Calgary, Alberta</p>
+          <p>Phone: +1 403-475-5552 <br>
+          Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
+      </address>
+      <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

@@ -27,6 +27,7 @@ Plumbingheating::Application.routes.draw do
   match '/plumbing-repair', to: 'static_pages#service_plumbingrepairs', via: 'get'
   match '/garbage-disposal', to: 'static_pages#service_garbagedisposal', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
+  match '/heating', to: 'static_pages#heating', via: 'get'
 
   
   

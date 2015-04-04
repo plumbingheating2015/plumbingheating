@@ -54,6 +54,9 @@ class StaticPagesController < ApplicationController
     @user = User.new
   end
 
+  def heating
+    @user = User.new       
+  end
  
 
 end
