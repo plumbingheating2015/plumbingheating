@@ -50,7 +50,46 @@
 
                     <p>Please fill out the form below in its entirety. The more details you give us, the more we will know about your plumbing issue. As soon as we receive your form, a customer service representative will call you to further discuss your problem, and we’ll arrange to send out a CSP technician to take care of your request and resolve your issue so your home or business can back to normal as soon as possible.</p>
                     <p>CSP Plumbing and Rooter Inc. is a licensed plumbing contractor providing the full range of professional plumbing services to residential customers throughout California. We have great plumbers, who do great work, and we charge very fair prices. Our plumbers have years of experience in the field, and we provide them with all the best tools and the latest equipment to handle any plumbing issue. Our service vans are loaded with replacement parts and fixtures, so there’s no waiting while your service technician goes out to get the part or fixture that you need.</p>
-                
+
+                  <div class="well">
+                    <%= form_for @user, html: {multipart: :true } do |f| %>
+                        <h4><b>SCHEDULE SERVICE</b></h4>
+                        <div class="form-group">
+                          <%= f.label :'name *' %><br>
+                          <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+                        </div>
+                        <div class="form-group">
+                          <%= f.label :'email *' %><br>
+                          <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+                        </div>
+                        <div class="form-group">
+                          <%= f.label :'phone *' %><br>
+                          <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+                        </div>
+                        <div class="form-group">
+                          <%= f.label :'postal *' %><br>
+                          <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+                        </div>
+                        <div class="form-group">
+                          <%= f.label :'Type of Plumbing or Rooter Issue' %>
+                          <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+                        </div>
+                        <div class="form-group">
+                          <%= f.label :'Please provide details about your plumbing issue *' %><br>
+                          <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+                        </div>
+                        <!-- <div class="form-group">
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>
+   </div> -->
+
+                        <div class="actions">
+                          <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+                        </div>
+                    <% end %>
+                  </div>
                 
                   </div>
                 
