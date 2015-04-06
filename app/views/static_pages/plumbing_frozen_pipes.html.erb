@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | Corlate</title>
+</head><!--/head-->
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+            <h2>FROZON PIPES</h2>
+           <!--  <h3>FROZON PIPES SERVICES IN CALGARY</h3> -->
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                <div class="col-md-8 text-justify">
+
+                    <div class="blog-item">
+                        <h4><b>Have Frozen Pipes In Calgary?</b></h4>
+                        <img class="img-responsive img-blog" src="/assets/plumbing/frozen_pipe.jpg"  alt="frozen pipe" />
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">
+                          <p>Partial water service indicates that a pipe is frozen somewhere in the house. A complete lack of water service can be the result of a frozen water meter or a frozen pipe leading from the water main in the street to the house. A meter or water pipe that feels extremely cold is most likely frozen. It’s important to clear frozen blockages as soon as possible to minimize the danger of pipes bursting in some inaccessible spot. The resulting leak could cause serious property damage. If you are worried about frozen pipes, please contact us today.</P>
+                          <ul>
+                              <li>Got Frozen Pipes?</li>
+                              <li>Don’t let your outdoor faucets freeze up in the winter.</li>
+                              <li>Unattach your garden hoses before freezing temperatures arrive in the fall.</li>
+                              <li>Then close the shut-off valve on the pipes which lead to your outdoor faucet.</li>
+                              <li>Then open the outdoor faucets.</li>
+                          </ul> 
+                          <p>If your indoor faucets sometimes freeze in very cold weather:</p>
+                           <ul>   
+                              <li>Try leaving the cabinet doors under the faucets open so that they can get a bit more heat. In extreme cases let the water trickle very slowly into the sink.</li>
+                              <li>Insulate water pipes which may be exposed to freezing temperatures or wind. Water pipes which are not being used should be drained for the winter in areas where there may be severely cold weather.</li>
+                              <li>If there is plumbing in your garage, be sure to keep your garage door closed when it is very cold. Pipes in unheated garages or basements should be insulated.</li>
+                          </ul>
+                          <p>Frozen pipes can cause major damage to your Calgary home and need to be attended to right away. Our specialized plumbing and heating equipment will have your pipes free and clear. And we have solutions for your home to help prevent re-freezing of the pipes. talk today our expriance plumbers today @ <b>403-475-5552</b></p>                                                                      
+                
+                                    </div> 
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    
+                        
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+                    <address>
+                        <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+                        <p>2036 35 St SW <br>
+                        T2B0W9 Calgary, Alberta</p>
+                        <p>Phone: +1 403-475-5552 <br>
+                        Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
+                    </address>
+                    <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                    
+                    
+                    <!-- <div class="widget blog_gallery">
+                        <h3>Our Gallery</h3>
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div> -->
+                        
+                    
+                </aside>     
+
+            </div><!--/.row-->
+
+         </div><!--/.blog-->
+
+    </section><!--/#blog-->
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

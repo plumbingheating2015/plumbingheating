@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | Corlate</title>
+</head><!--/head-->
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+            <h2>FAUCETS</h2>
+            <h3>PLUMBING FAUCET REPLACEMENT IN CALGARY</h3>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                <div class="col-md-8 text-justify">
+                    <div class="blog-item">
+                        <p>Make sure your plumbing fixture replacement is done the right way and according to current industry standards with the help of a fully licensed Calgary Service Plumbers. Let us know if you’re planning on remodeling your kitchen or bathroom and need a professional to help you with plumbing fixture replacement.</p>
+                            
+                    </div>
+
+                    <div class="blog-item">
+                        <h4><b>Professional Calgary Service Plumbers</b></h4>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-7 blog-content">
+                                    <div class="media-body">
+                          <p>When it comes to fixture replacement, it’s best to allow a professional to handle the situation.</p>
+                          <P>You might think  you can handle your plumbing fixture replacement on your own, but it is better that you allow a professional to handle your kitchen, bathroom, toilet and bathtub fixtures. Your plumbing system is very intricate and should be taken care of by an experienced Calgary Service plumbers.</P>
+                          <P>When it comes to fixture replacement, you have got to think about:</P>
+                          <ul>
+                              <li>The type of faucet and type of sink you have</li>
+                              <li>Your water feed Size</li>
+                          </ul>
+                          <P>By choosing to have a professional handle your fixture replacement, there’s less of a chance you’ll have to call out an emergency plumber later on.</P>                                                                      
+                
+                                    </div> 
+                                </div>
+                                <div class="col-xs-12 col-sm-5 blog-content">
+                                    <div class="media-body">
+                          <img class="img-responsive img-blog" src="/assets/plumbing/faucet.jpg"  alt="" />                                                    
+                
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    
+                        
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+                    <address>
+                        <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+                        <p>2036 35 St SW <br>
+                        T2B0W9 Calgary, Alberta</p>
+                        <p>Phone: +1 403-475-5552 <br>
+                        Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
+                    </address>
+                    <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                    
+                    
+                    <!-- <div class="widget blog_gallery">
+                        <h3>Our Gallery</h3>
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div> -->
+                        
+                    
+                </aside>     
+
+            </div><!--/.row-->
+
+         </div><!--/.blog-->
+
+    </section><!--/#blog-->
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

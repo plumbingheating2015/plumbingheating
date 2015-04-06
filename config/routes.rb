@@ -25,11 +25,22 @@ Plumbingheating::Application.routes.draw do
   match '/water-heater-installation', to: 'static_pages#service_waterheater', via: 'get'
   match '/hydro-jetting', to: 'static_pages#service_hydrojetting', via: 'get'
   match '/plumbing-repair', to: 'static_pages#service_plumbingrepairs', via: 'get'
-  match '/garbage-disposal', to: 'static_pages#service_garbagedisposal', via: 'get'
+  #match '/garbage-disposal', to: 'static_pages#service_garbagedisposal', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/heating', to: 'static_pages#heating', via: 'get'
 
-  
+  # under plumbing tab
+  match '/emergencies', to: 'static_pages#plumbing_emergencies', via: 'get'
+  match '/faucets', to: 'static_pages#plumbing_faucets', via: 'get'
+  match '/frozen-pipes', to: 'static_pages#plumbing_frozen_pipes', via: 'get'
+  match '/garbage-disposal', to: 'static_pages#plumbing_garbage_disposal', via: 'get'
+  match '/shower-bathtabs', to: 'static_pages#plumbing_showers_bathtabs', via: 'get'
+  match '/sinks', to: 'static_pages#plumbing_sinks', via: 'get'
+  match '/sump-pumps', to: 'static_pages#plumbing_sump_pumps', via: 'get'
+  match '/toilets', to: 'static_pages#plumbing_toilets', via: 'get'
+  match '/water_heater', to: 'static_pages#plumbing_water_heater', via: 'get'
+  match '/water_pressure', to: 'static_pages#plumbing_water_pressure', via: 'get'
+
   
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | Corlate</title>
+</head><!--/head-->
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+            <h2>TOILETS</h2>
+            <h3>CALGARY TOILETS PLUMBING SERVICES</h3>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                <div class="col-md-8 text-justify">
+                    <div class="blog-item">
+                        <h3><b>Clogged Toilet, Leaky Toilet, Repair and Replacement Services in Calgary</b></h3>
+                        <p>The toilet is the most utilized plumbing fixture in your home. The obvious frustration if your toilet fails to operate properly, means that the specific problem at hand will require prompt attention. Calgary Service Plumbers offers professional Calgary <b>clogged toilet repair & replacement services</b>, and we can assist you in solving any toilet plumbing problem.</p>
+                            
+                    </div>
+
+                    <div class="blog-item">
+                        <h4><b>Full Toilet Repair, Replace and Supply Services</b></h4>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">
+                                    <h5><b>Clogged Toilets</b></h5>
+                                    <p>A clogged toilet is one of the most common plumbing problems. If your toilet overflows, it is most likely clogged. Calgary Service Plumbers uses modern equipment designed to remove any debris clogging your toilet, ensuring that your pipes are clear of any blockages that might cause future problems.</p>
+
+                                    <h5><b>Leaking Tanks</b></h5>
+                                    <p>A leaky toilet is a costly and wasteful problem. Toilet leaks are most commonly caused when a defective flush valve does not seat properly to form a water tight seal. Water will then leak around it into the toilet bowl. A clogged or leaking toilet can cause significant damage to your Calgary home and property if not dealt with in a professional manner. If your toilet is clogged or leaking, contact the professionals at Calgary Service Plumbers.</p>
+
+                                    <h5><b>Running Toilets</b></h5>
+                                    <p>Runny toilets are money and water wasters, contact us for punctual water seepage detection and fast correction.</p>                                        
+                
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <h4><b>New Toilets Supplied & Installed</b></h4>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">
+                                    
+                                    <p>Installing a new water saving toilet can be a step in the right direction when it comes to making your home a greener, more energy efficient place. Water-saving toilets can conserve up to 60% of your current toilet’s annual water usage.</p>
+
+                                    <p>We have carefully researched and selected the best toilets we believe to be with regards to performance, quality, price and design. We’ve done all the research for you. It doesn’t have to be complicated. Let us bring a home shopping experience to you. All new toilets come with a written no worries warranty! Call the experts at Calgary Service Plumbers now.</p>                                                                           
+                
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                    
+
+
+                        
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+                    <address>
+                        <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+                        <p>2036 35 St SW <br>
+                        T2B0W9 Calgary, Alberta</p>
+                        <p>Phone: +1 403-475-5552 <br>
+                        Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
+                    </address>
+                    <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                    
+                    
+                    <!-- <div class="widget blog_gallery">
+                        <h3>Our Gallery</h3>
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div> -->
+                        
+                    
+                </aside>     
+
+            </div><!--/.row-->
+
+         </div><!--/.blog-->
+
+    </section><!--/#blog-->
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

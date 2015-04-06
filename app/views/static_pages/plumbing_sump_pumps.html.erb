@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | Corlate</title>
+</head><!--/head-->
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+            <h2>SUMP PUMPS</h2>
+            <h3>CALGARY SUMP PUMPS SERVICES</h3>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                <div class="col-md-8 text-justify">
+                    <div class="blog-item">
+                        <h4><b>Sump Pump Installation & Replacement</b></h4>
+                        <img class="img-responsive img-blog" src="/assets/plumbing/sump_pump.jpg"  alt="Sump Pump" />
+                        <p>A sump pump is used for drainage collected water or to remove water that has accumulated in a pit, commonly found in a home's basement. The water may enter via the perimeter drains of a basement waterproofing system, funnelling into the pit or because of rain or natural ground water, if the basement is below the water table level.</p>
+                        <p>Sump pumps are used where basement flooding happens regularly and to ameliorate dampness where the water table is above the foundation of a home. Sump pumps send water away from a house to any place where it is no longer problematic, such as a municipal stormdrain or a dry well.</p>
+                        <p>Pumps may be connected to the sanitary sewer in older properties but now, this practice may be against the plumbing code or city bylaws because it can overwhelm the municipalsewage treatment system.</p>
+                        <p>Usually hardwired into a home's electrical system, sump pumps may have a battery backup. The home's pressurized water supply powers some pumps, eliminating the need for electricity. Since a sump pit may overflow if not constantly pumped, a backup system is important for cases when the main power is out for prolonged periods of time.</p>
+                        
+                    </div>
+
+                    <div class="blog-item">
+                        <h4><b>Sump Pump Installation Service</b></h4>
+                            <div class="row"> 
+                                <div class="col-xs-12 col-sm-12 blog-content">
+                                    <div class="media-body">                                        
+                <p>Our specialists at Calgary Service Plumbers have up to date knowledge and skill regarding all facets of sump pump installation and operation. We can give you the proper guidance and advise you on the type of sump pump that would best suit your property. Furthermore we will install your sump pump with the care and precision you'd expect from some of the most experienced plumbers in the Calgary.</p>
+                <p>To book a sump pump installation with one of our reliable plumbers call us today <b>403-475-5552</b>.</p>
+                                    </div> 
+                                </div>
+                            </div>
+                    </div>
+
+                </div><!--/.col-md-8-->
+
+                <aside class="col-md-4">
+                    <address>
+                        <h5><b>CALGARY SERVICE PLUMBER</b></h5>
+                        <p>2036 35 St SW <br>
+                        T2B0W9 Calgary, Alberta</p>
+                        <p>Phone: +1 403-475-5552 <br>
+                        Email: <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
+                    </address>
+                    <div class="well">
+      <%= form_for @user, html: {multipart: :true } do |f| %>
+<h4><b>SCHEDULE SERVICE</b></h4>
+ <div class="form-group">   
+    <%= f.label :'name *' %><br>
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'email *' %><br>
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address',  required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'phone *' %><br>
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number', required: true  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'postal *' %><br>
+    <%= f.text_field :postal, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Enter the postal code', required: true  %>
+  </div>
+  <div class="form-group">                
+      <%= f.label :'Type of Plumbing or Rooter Issue' %>                                      
+      <%= f.select :issue, [['Residential'], ['Restaurant']], {}, tabindex: "5", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :'Please provide details about your plumbing issue *' %><br>
+    <%= f.text_area :message, type:"text", tabindex: "6", class: "form-control",  placeholder: 'Write your plumbing issue', rows: "8", required: true  %>
+  </div>
+  <!-- <div class="form-group">   
+       <div class="field">
+         <%= f.label :'Submit a picture if available' %><br>
+         <%= f.file_field :avatar, :multiple => true %>
+       </div>     
+   </div> -->
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "8", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
+                    
+                    
+                    <!-- <div class="widget blog_gallery">
+                        <h3>Our Gallery</h3>
+    <ul class="sidebar-gallery">
+        <li><img src="/assets/gallery/gal-bathroom-lav.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-double-caparment-sink.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-gernal-pic.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-home-plumbing.gif" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-hydrojetting_plumbing.jpg" class="img-responsive" alt="" /></li>
+        <li><img src="/assets/gallery/gal-IndoorAirQualityh.gif" class="img-responsive" alt="" /></li>
+    </ul>
+                    </div> -->
+                        
+                    
+                </aside>     
+
+            </div><!--/.row-->
+
+         </div><!--/.blog-->
+
+    </section><!--/#blog-->
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>
