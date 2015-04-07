@@ -23,7 +23,7 @@ Plumbingheating::Application.routes.draw do
   #match '/commercial-plumbing', to: 'static_pages#service_commercial', via: 'get'
   #match '/retail-plumbing/', to: 'static_pages#service_retail', via: 'get'
   match '/water-heater-installation', to: 'static_pages#service_waterheater', via: 'get'
-  match '/hydro-jetting', to: 'static_pages#service_hydrojetting', via: 'get'
+  #match '/hydro-jetting', to: 'static_pages#service_hydrojetting', via: 'get'
   match '/plumbing-repair', to: 'static_pages#service_plumbingrepairs', via: 'get'
   #match '/garbage-disposal', to: 'static_pages#service_garbagedisposal', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
@@ -41,7 +41,14 @@ Plumbingheating::Application.routes.draw do
   match '/water_heater', to: 'static_pages#plumbing_water_heater', via: 'get'
   match '/water_pressure', to: 'static_pages#plumbing_water_pressure', via: 'get'
 
-  
+  #under Drain tab
+  match '/drain-cleaning', to: 'static_pages#drain_cleaning', via: 'get'
+  match '/drain-replacement', to: 'static_pages#drain_replacement', via: 'get'
+  match '/drain-repair', to: 'static_pages#drain_repair', via: 'get'
+  match '/sewer-cleaning', to: 'static_pages#drain_sewer', via: 'get'
+  match '/camera-inspection', to: 'static_pages#drain_camera', via: 'get'
+  match '/hydro-jetting', to: 'static_pages#drain_hydrojetting', via: 'get'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

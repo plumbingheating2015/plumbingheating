@@ -98,6 +98,30 @@ class StaticPagesController < ApplicationController
       @user = User.new
   end
 
+  def drain_cleaning
+      @user = User.new
+  end
+
+  def drain_replacement
+      @user = User.new
+  end
+
+  def drain_repair
+      @user = User.new
+  end
+
+  def drain_sewer
+      @user = User.new
+  end
+
+  def drain_camera
+      @user = User.new
+  end
+
+  def drain_hydrojetting
+      @user = User.new
+  end
+
 
  
 
