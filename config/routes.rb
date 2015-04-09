@@ -32,22 +32,22 @@ Plumbingheating::Application.routes.draw do
   # under plumbing tab
   match '/emergencies', to: 'static_pages#plumbing_emergencies', via: 'get'
   match '/faucets', to: 'static_pages#plumbing_faucets', via: 'get'
-  match '/frozen-pipes', to: 'static_pages#plumbing_frozen_pipes', via: 'get'
-  match '/garbage-disposal', to: 'static_pages#plumbing_garbage_disposal', via: 'get'
-  match '/shower-bathtabs', to: 'static_pages#plumbing_showers_bathtabs', via: 'get'
+  match '/frozen_pipes', to: 'static_pages#plumbing_frozen_pipes', via: 'get'
+  match '/garbage_disposal', to: 'static_pages#plumbing_garbage_disposal', via: 'get'
+  match '/shower_bathtabs', to: 'static_pages#plumbing_showers_bathtabs', via: 'get'
   match '/sinks', to: 'static_pages#plumbing_sinks', via: 'get'
-  match '/sump-pumps', to: 'static_pages#plumbing_sump_pumps', via: 'get'
+  match '/sump_pumps', to: 'static_pages#plumbing_sump_pumps', via: 'get'
   match '/toilets', to: 'static_pages#plumbing_toilets', via: 'get'
   match '/water_heater', to: 'static_pages#plumbing_water_heater', via: 'get'
   match '/water_pressure', to: 'static_pages#plumbing_water_pressure', via: 'get'
 
   #under Drain tab
-  match '/drain-cleaning', to: 'static_pages#drain_cleaning', via: 'get'
-  match '/drain-replacement', to: 'static_pages#drain_replacement', via: 'get'
-  match '/drain-repair', to: 'static_pages#drain_repair', via: 'get'
-  match '/sewer-cleaning', to: 'static_pages#drain_sewer', via: 'get'
-  match '/camera-inspection', to: 'static_pages#drain_camera', via: 'get'
-  match '/hydro-jetting', to: 'static_pages#drain_hydrojetting', via: 'get'
+  match '/drain_cleaning', to: 'static_pages#drain_cleaning', via: 'get'
+  match '/drain_replacement', to: 'static_pages#drain_replacement', via: 'get'
+  match '/drain_repair', to: 'static_pages#drain_repair', via: 'get'
+  match '/sewer_cleaning', to: 'static_pages#drain_sewer', via: 'get'
+  match '/camera_inspection', to: 'static_pages#drain_camera', via: 'get'
+  match '/hydro_jetting', to: 'static_pages#drain_hydrojetting', via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
