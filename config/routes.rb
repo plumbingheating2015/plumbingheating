@@ -45,7 +45,7 @@ Plumbingheating::Application.routes.draw do
   match '/drain_cleaning', to: 'static_pages#drain_cleaning', via: 'get'
   match '/drain_replacement', to: 'static_pages#drain_replacement', via: 'get'
   match '/drain_repair', to: 'static_pages#drain_repair', via: 'get'
-  match '/sewer_cleaning', to: 'static_pages#drain_sewer', via: 'get'
+  match '/backwater', to: 'static_pages#drain_backwater', via: 'get'
   match '/camera_inspection', to: 'static_pages#drain_camera', via: 'get'
   match '/hydro_jetting', to: 'static_pages#drain_hydrojetting', via: 'get'
 

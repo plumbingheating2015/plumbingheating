@@ -110,7 +110,7 @@ class StaticPagesController < ApplicationController
       @user = User.new
   end
 
-  def drain_sewer
+  def drain_backwater
       @user = User.new
   end
 

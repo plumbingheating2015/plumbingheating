@@ -220,6 +220,17 @@ body > section {
   border-radius: 6px;
 }
 
+.myimg { 
+  float: left; 
+  padding-right:1em;
+}
+
+.mydoc { 
+  margin: 0; 
+  padding: 0; 
+  text-align: justify 
+}
+
 /*************************
 *******Header******
 **************************/
