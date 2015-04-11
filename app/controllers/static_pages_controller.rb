@@ -110,7 +110,7 @@ class StaticPagesController < ApplicationController
       @user = User.new
   end
 
-  def drain_sewer
+  def drain_backwater
       @user = User.new
   end
 
@@ -119,6 +119,10 @@ class StaticPagesController < ApplicationController
   end
 
   def drain_hydrojetting
+      @user = User.new
+  end
+
+  def drain_sewer_clog
       @user = User.new
   end
 

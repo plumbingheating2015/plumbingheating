@@ -104,7 +104,7 @@ a:focus {
 
 .dropdown-menu {
   margin-top: -1px;
-  min-width: 180px;
+  min-width: 220px;
 }
 
 .center h2{
@@ -218,6 +218,17 @@ body > section {
   font-size: 26px;
   line-height: 1.33;
   border-radius: 6px;
+}
+
+.myimg { 
+  float: left; 
+  padding-right:1em;
+}
+
+.mydoc { 
+  margin: 0; 
+  padding: 0; 
+  text-align: justify 
 }
 
 /*************************
