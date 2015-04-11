@@ -2563,7 +2563,12 @@ shortcodes page css
   margin-top: 0;
   font-weight: 600
 }
-
+.banner-text{
+    color: #ffffff;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
 
 
 /***********************
