@@ -122,6 +122,10 @@ class StaticPagesController < ApplicationController
       @user = User.new
   end
 
+  def drain_sewer_clog
+      @user = User.new
+  end
+
 
  
 

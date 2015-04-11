@@ -48,6 +48,7 @@ Plumbingheating::Application.routes.draw do
   match '/backwater', to: 'static_pages#drain_backwater', via: 'get'
   match '/camera_inspection', to: 'static_pages#drain_camera', via: 'get'
   match '/hydro_jetting', to: 'static_pages#drain_hydrojetting', via: 'get'
+  match '/drain_sewer_clog', to: 'static_pages#drain_sewer_clog', via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
