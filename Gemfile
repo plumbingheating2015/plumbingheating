@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-
+gem "dynamic_sitemaps"
 
 gem 'jbuilder', '~> 1.2'
 gem 'mail'
