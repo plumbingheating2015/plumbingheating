@@ -41,7 +41,7 @@ Plumbingheating::Application.routes.draw do
   match '/water-heater', to: 'static_pages#plumbing_water_heater', via: 'get', as: :water_heater
   match '/water-pressure', to: 'static_pages#plumbing_water_pressure', via: 'get', as: :water_pressure
 
-  #under Drain tab
+  #under drain tab
   #get '/drain-cleaning', to: 'static_pages#drain_cleaning', as: :drain_cleaning
   match '/drain-cleaning', to: 'static_pages#drain_cleaning', via: 'get', as: :drain_cleaning  
   match '/drain-replacement', to: 'static_pages#drain_replacement', via: 'get', as: :drain_replacement
