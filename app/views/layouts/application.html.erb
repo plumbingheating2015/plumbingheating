@@ -39,26 +39,13 @@
                 <p><i class="fa fa-envelope-o"></i> <a href="mailto:info@calgaryserviceplumbers.com">info@calgaryserviceplumbers.com</a></p>
                         </div>
                     </div>
-                    <!-- <div class="col-sm-3 col-xs-4">
-                        <div class="top-number">
-                        	<p><span><b>Get A Plumber Now, Save 10%</b></span></p>
-                        </div>
-                    </div> -->
                     <div class="col-sm-6 col-xs-6">
                        <div class="social">
                             <ul class="social-share">
                                 <li><a href="https://www.facebook.com/pages/Calgary-service-plumbers-inc/1382425148749426?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/Calgaryplumber0" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
                                 <li><a href="https://plus.google.com/u/0/108377993964783682026/about/p/pub" target="_blank"><i class="fa fa-skype"></i></a></li>
                             </ul>
-                            <!-- <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div> -->
                        </div>
                     </div>
                 </div>
@@ -107,19 +94,6 @@
                 <div class="nav-bar-menu collapse navbar-collapse navbar-right">
                     <ul class="nav-bar-menu nav navbar-nav">
                         <li class="<%= 'active' if current_page?(root_path) %>"><a href="/">Home</a></li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/residential-plumbing">Residential</a></li> -->
-                                <!-- <li><a href="/commercial-plumbing">Commercial</a></li>
-                                <li><a href="/retail-plumbing">Retail</a></li> -->
-                                <!-- <li><a href="/water-heater-installation">Water Heaters</a></li>
-                                <li><a href="/hydro-jetting">Hydro-jetting</a></li>
-                                <li><a href="/plumbing-repair">Plumbing Repairs</a></li>
-                                <li><a href="/garbage-disposal">Garbage Disposal</a></li>
-                                <li><a href="/specials">Drain Cleaning</a></li>
-                            </ul>
-                        </li> -->
                         <li class="dropdown <%= 'active' if current_page?(emergencies_path) || current_page?(toilets_path) || current_page?(faucets_path) || current_page?(water_pressure_path) || current_page?(shower_bathtabs_path) || current_page?(sinks_path) || current_page?(sump_pumps_path) || current_page?(frozen_pipes_path) || current_page?(water_heater_path) || current_page?(garbage_disposal_path) %>">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plumbing <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -150,15 +124,6 @@
                         <li class="<%= 'active' if current_page?(heating_path) %>"><a href="/heating">Heating</a></li>
                         <li class="<%= 'active' if current_page?(schedule_path) %>"><a href="/schedule">Schedule Service</a></li>
                         <li class="<%= 'active' if current_page?(specials_path) %>"><a href="/specials">Specials</a></li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Blog Single</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                            </ul>
-                        </li> -->
                         <li class="<%= 'active' if current_page?(contact_path) %>"><a href="/contact">Contact Us</a></li> 
                         <li class="<%= 'active' if current_page?(blog_path) %>"><a href="/blog">Blog</a></li>                        
                     </ul>
@@ -200,71 +165,7 @@
             </div>
         </div>
         
-<!-- <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
-                        </ul>
-                    </div>    
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Developers</h3>
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">SEO Marketing</a></li>
-                            <li><a href="#">Theme</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
-                        </ul>
-                    </div>    
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <footer id="footer" class="nav-bar-menu midnight-blue">
         <div class="container">
