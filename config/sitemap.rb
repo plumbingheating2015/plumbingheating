@@ -4,12 +4,12 @@ host "www.calgaryserviceplumbers.com"
 
 sitemap :site do
   url root_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
-  url services_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
+  #url services_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url schedule_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url specials_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url contact_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url blog_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
-  url about_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
+  #url about_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url heating_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url emergencies_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
   url faucets_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
