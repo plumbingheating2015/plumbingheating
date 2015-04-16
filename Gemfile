@@ -16,7 +16,7 @@ gem "dynamic_sitemaps"
 gem 'jbuilder', '~> 1.2'
 gem 'mail'
 gem 'carrierwave'
-gem 'meta-tags'
+gem 'metamagic'
 
 group :assets do
 gem 'less-rails-bootstrap'
