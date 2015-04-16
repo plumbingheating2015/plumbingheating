@@ -4,13 +4,7 @@ Plumbingheating::Application.routes.draw do
 
   root 'static_pages#index'
 
-  #get "static_pages/index"
-  #get "static_pages/services"
-  #get "static_pages/schedule"
-  #get "static_pages/specials"
-  #get "static_pages/contact"
-  #get "static_pages/blog"
-  #get "static_pages/help"
+  
   match '/', to: 'static_pages#index', via: 'get'
   #match '/services', to: 'static_pages#services', via: 'get'
   match '/schedule', to: 'static_pages#schedule', via: 'get'
