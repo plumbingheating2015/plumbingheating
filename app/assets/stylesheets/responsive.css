@@ -291,13 +291,25 @@
   .post_reply_comments {
     padding-left: 20px;
   }
-    
+  
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+  color: #CBB4B4;
+  background-color: transparent;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus {
+  color: #fff;
+  background-color: #c52d2f;
+}
 
 }
 
 /* XS Portrait */
 @media (max-width: 480px) {
-
 
 }
 
