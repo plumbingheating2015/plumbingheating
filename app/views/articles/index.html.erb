@@ -1,0 +1,90 @@
+<!-- <div class="pad_top2">
+<%= link_to "New Article", new_article_path %>
+<% @articles.each do |article| %>
+  <h3><%= article.title.html_safe %></h3>
+  <p><%= article.body.html_safe %></p>
+  <%= link_to "Edit Article", edit_article_path(article) %>
+  <% if article != @articles.last %>
+  <hr />
+  <% end %>
+<% end %>
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Plumbing Emergencies</title>
+</head>
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="center">
+        	<% if blogger_signed_in? %>
+        	<p>Welcome <%= current_blogger.email %></p>
+            <h2><%= link_to "New Blog", new_article_path %></h2>
+             <%= link_to 'Logged In [click to logout]', destroy_blogger_session_path, :method => :delete %>
+            <% else %>
+            <h2>Blog</h2>
+            <% end %>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                 <div class="col-md-12">
+                 	<% @articles.each do |article| %>
+                    <div class="blog-item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-2 text-center">
+                                <div class="entry-meta">
+                                    <span id="publish_date"><%= article.created_at %></span>
+                                </div>
+                            </div>
+                                
+                            <div class="col-xs-12 col-sm-10 blog-content">
+                                
+                                <h2><a href="blog-item.html"><%= article.title.html_safe %></a></h2>
+                                <h3><%= article.body.html_safe %></h3>
+                                <% if blogger_signed_in? %>
+                                <%= link_to "Edit Article", edit_article_path(article), class: "btn btn-primary readmore" %>
+                                <% end %>
+                                <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
+                            
+                            
+							  <% if article != @articles.last %>
+							  <hr />
+							  <% end %>
+							  </div>
+                        </div>    
+                    </div>
+                    <% end %>
+                        
+                    <ul class="pagination pagination-lg">
+                        <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Next Page<i class="fa fa-long-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+
+                  
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 Plumbingheating::Application.routes.draw do
 
+  devise_for :bloggers
+  resources :articles
+
+  mount Ckeditor::Engine => '/ckeditor'
   resources :users 
 
   root 'static_pages#index'
@@ -44,6 +48,7 @@ Plumbingheating::Application.routes.draw do
   match '/camera-inspection', to: 'static_pages#drain_camera', via: 'get', as: :camera_inspection
   match '/hydro-jetting', to: 'static_pages#drain_hydrojetting', via: 'get', as: :hydro_jetting
   match '/drain-sewer-clog', to: 'static_pages#drain_sewer_clog', via: 'get', as: :drain_sewer_clog
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

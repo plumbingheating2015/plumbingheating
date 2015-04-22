@@ -17,6 +17,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'mail'
 gem 'carrierwave'
 gem 'metamagic'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paperclip'
+gem 'devise'
 
 group :assets do
 gem 'less-rails-bootstrap'
