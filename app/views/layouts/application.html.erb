@@ -124,7 +124,7 @@
                         <li class="<%= 'active' if current_page?(schedule_path) %>"><a href="/schedule">Schedule Service</a></li>
                         <li class="<%= 'active' if current_page?(specials_path) %>"><a href="/specials">Specials</a></li>
                         <li class="<%= 'active' if current_page?(contact_path) %>"><a href="/contact">Contact Us</a></li> 
-                        <li class="<%= 'active' if current_page?(blog_path) %>"><a href="/blog">Blog</a></li>                        
+                        <li class="<%= 'active' if current_page?(articles_path) || current_page?(new_blogger_session_path) || current_page?(new_article_path) %>"><a href="/articles">Blog</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->

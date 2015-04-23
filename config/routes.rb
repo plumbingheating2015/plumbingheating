@@ -15,7 +15,7 @@ Plumbingheating::Application.routes.draw do
   match '/schedule', to: 'static_pages#schedule', via: 'post'
   match '/specials', to: 'static_pages#specials', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
-  match '/blog', to: 'static_pages#blog', via: 'get'
+  
   #match '/help', to: 'static_pages#help', via: 'get'
   #match '/residential-plumbing', to: 'static_pages#service_residential', via: 'get'
   #match '/commercial-plumbing', to: 'static_pages#service_commercial', via: 'get'
@@ -48,8 +48,6 @@ Plumbingheating::Application.routes.draw do
   match '/camera-inspection', to: 'static_pages#drain_camera', via: 'get', as: :camera_inspection
   match '/hydro-jetting', to: 'static_pages#drain_hydrojetting', via: 'get', as: :hydro_jetting
   match '/drain-sewer-clog', to: 'static_pages#drain_sewer_clog', via: 'get', as: :drain_sewer_clog
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

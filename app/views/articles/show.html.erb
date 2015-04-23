@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog | Plumbing</title>
+</head>
+
+<body>
+
+    <section id="blog" class="container">
+        <div class="row">            
+            <div class="col-sm-12 center">
+                <h2>Blog Item</h2>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="row">
+                 <div class="col-md-12">
+                 	
+                    <div class="blog-item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-2 text-center">
+                                <div class="entry-meta">
+                                    <span id="publish_date"><%= @article.created_at.strftime("%Y %B %d, %H:%M:%S") %></span>
+                                </div>
+                            </div>
+                                
+                            <div class="col-xs-12 col-sm-10 blog-content">
+
+                                <h2 class="col_redish"><%= @article.title.html_safe %></h2>
+                                <h3><%= @article.body.html_safe %></h3>
+							  
+							</div>
+                        </div>    
+                    </div>
+                    
+                </div>                  
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/jquery.prettyPhoto.js"></script>
+    <script src="/assets/jquery.isotope.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/wow.min.js"></script>
+</body>
+</html>

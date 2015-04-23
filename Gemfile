@@ -20,6 +20,7 @@ gem 'metamagic'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
 gem 'devise'
+gem 'will_paginate'
 
 group :assets do
 gem 'less-rails-bootstrap'
