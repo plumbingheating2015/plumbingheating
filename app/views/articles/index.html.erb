@@ -45,10 +45,12 @@
                             <h2><%= link_to  article.title.html_safe, article_path(article.id) %></h2>
 
                                 <h3><%= article.body.html_safe %></h3>
+
+                                <%= link_to "Read More ".html_safe + "<i class='fa fa-angle-right'></i>".html_safe, article_path(article.id), class: "btn btn-primary readmore" %>
                                 <% if blogger_signed_in? %>
                                 <%= link_to "Edit Article", edit_article_path(article), class: "btn btn-primary readmore" %>
-                                <%= link_to "Read More ".html_safe + "<i class='fa fa-angle-right'></i>".html_safe, article_path(article.id), class: "btn btn-primary readmore" %>
-                                <% end %>                                                          
+                                <%= link_to "Delete Article", article, method: :delete, data:{ confirm: 'Are you sure?'}, class: "btn btn-primary readmore" %>
+                                <% end %>                                   
                             
 							  <% if article != @articles.last %>
 							  <hr />
